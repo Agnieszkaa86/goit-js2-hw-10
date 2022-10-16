@@ -38,7 +38,7 @@ function renderCountryList(countries) {
         resetList();
 
         const markup = countries.map(({ name, flags }) => {
-            return `<li class="country-list"><img class="flag_img" src="${flags.svg}">
+            return `<li class= "country-list"><img class= "flag_img" src= "${flags.svg}">
             <h1>${name}</h1>
             </li>`
         })
@@ -48,8 +48,8 @@ function renderCountryList(countries) {
         resetList();
         const markup = countries
             .map(({ name, flags, capital, population, languages }) => {
-                return `<div class = "main">
-            <img class= " flag_img" src= "${flags.svg}">
+                return `<div class= "main">
+            <img class= "flag_img" src= "${flags.svg}">
             <h2>${name}</h2>
             </div>
             <li class= "country_item"></li>
