@@ -18,3 +18,30 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+li{
+  list-style: none;
+}
+.country-info{
+  margin: 40px;
+}
+.flag_img{
+  margin-right: 40px;
+  width: 150px;
+  box-shadow: 1px 2px 3px gray;
+}
+.main{
+display: flex;
+align-items: center;
+margin-bottom: 25px;
+}
+p{
+  margin-right: 22px;
+  display: block;
+  font-size: 28px;;
+}
+.country_item{
+display: flex
+}
+h2{
+  font-size: 30px;
+}

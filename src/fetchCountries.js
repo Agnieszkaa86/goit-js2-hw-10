@@ -1,13 +1,14 @@
-
 export function fetchCountries(name) {
-    const params = new URLSearchParams({
-        fields: 'name, capital,popultion,flags,languages',
-    });
-    return fetch(`https://restcountries.com/v3.1/name/${name}?${params}`)
-        .then((response) => {
-            if (!response.ok) {
-                throw new Error(response.status);
-            }
-            return response.json();
-        });
+  return fetch(
+    `https://restcountries.com/v2/name/${name}?fields=name,capital,population,flags,languages`
+  )
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(response.status);
+      }
+
+      console.log(response);
+      return response.json();
+    })
+    .catch(err => console.log(err));
 }
